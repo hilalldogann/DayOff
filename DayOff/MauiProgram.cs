@@ -1,4 +1,5 @@
-﻿using DayOff.ViewModels;
+﻿using DayOff.Services;
+using DayOff.ViewModels;
 using DayOff.Views;
 using Microsoft.Extensions.Logging;
 
@@ -18,18 +19,21 @@ public static class MauiProgram
 			});
 
         //services
+        builder.Services.AddSingleton<IEmployeeService, EmployeeService>();
 
 
         //view registration
 
         builder.Services.AddSingleton<EmployeeListPage>();
+        builder.Services.AddTransient<AddUpdateEmployeeDetail>();
 
         //view models
         builder.Services.AddSingleton<EmployeeListPageViewModel>();
+        builder.Services.AddTransient<AddUpdateEmployeeDetailViewModel>();
 
-        //
+		//
 
-
+	
 #if DEBUG
         builder.Logging.AddDebug();
 #endif

@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = DayOff.Resources.Styles.St
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
 
+[/Users/hilaldogan/Projects/DayOff/DayOff/Views/AddUpdateEmployeeDetail.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = DayOff.Views.AddUpdateEmployeeDetail.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/AddUpdateEmployeeDetail.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/AddUpdateEmployeeDetail.xaml
+
 [/Users/hilaldogan/Projects/DayOff/DayOff/Views/EmployeeListPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = DayOff.Views.EmployeeListPage.xaml

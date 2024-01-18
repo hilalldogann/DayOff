@@ -272,6 +272,8 @@
 /Users/hilaldogan/Projects/DayOff/DayOff/obj/Debug/net7.0-ios/iossimulator-x64/DayOff.pdb
 /Users/hilaldogan/Projects/DayOff/DayOff/obj/Debug/net7.0-ios/iossimulator-x64/DayOff.genruntimeconfig.cache
 /Users/hilaldogan/Projects/DayOff/DayOff/obj/Debug/net7.0-ios/iossimulator-x64/ref/DayOff.dll
+/Users/hilaldogan/Projects/DayOff/DayOff/bin/Debug/net7.0-ios/iossimulator-x64/CommunityToolkit.Mvvm.dll
+/Users/hilaldogan/Projects/DayOff/DayOff/obj/Debug/net7.0-ios/iossimulator-x64/resourcestamps/CommunityToolkit.Mvvm.stamp
 /Users/hilaldogan/Projects/DayOff/DayOff/obj/Debug/net7.0-ios/iossimulator-x64/resourcestamps/Microsoft.CSharp.stamp
 /Users/hilaldogan/Projects/DayOff/DayOff/obj/Debug/net7.0-ios/iossimulator-x64/resourcestamps/Microsoft.Extensions.Configuration.Abstractions.stamp
 /Users/hilaldogan/Projects/DayOff/DayOff/obj/Debug/net7.0-ios/iossimulator-x64/resourcestamps/Microsoft.Extensions.Configuration.stamp

@@ -3,6 +3,7 @@ using SQLite;
 
 namespace DayOff.Models
 {
+    
     public class EmployeeModel
 	{
         [PrimaryKey, AutoIncrement]

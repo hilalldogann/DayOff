@@ -1,4 +1,5 @@
 /Users/hilaldogan/Projects/DayOff/DayOff/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DayOff.app/Contents/MonoBundle/icudt.dat
+/Users/hilaldogan/Projects/DayOff/DayOff/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DayOff.app/Contents/MonoBundle/CommunityToolkit.Mvvm.dll
 /Users/hilaldogan/Projects/DayOff/DayOff/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DayOff.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.dll
 /Users/hilaldogan/Projects/DayOff/DayOff/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DayOff.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/hilaldogan/Projects/DayOff/DayOff/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../DayOff.app/Contents/MonoBundle/Microsoft.Extensions.DependencyInjection.dll

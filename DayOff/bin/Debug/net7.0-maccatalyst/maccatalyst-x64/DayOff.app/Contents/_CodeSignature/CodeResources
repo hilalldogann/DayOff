@@ -47,18 +47,25 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>MonoBundle/CommunityToolkit.Mvvm.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oqsulFVnM7C7ilbH956OoKNj+YTEmgrnV+MponOkV3Q=
+			</data>
+		</dict>
 		<key>MonoBundle/DayOff.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oPk5+whZRYy9DrnwOXGVdu5hN6xeiu4R6dPODWfUtes=
+			FcxnETjt5vgbk+J6YB60DHUO81Y/iC2xKdNtPNySKSw=
 			</data>
 		</dict>
 		<key>MonoBundle/DayOff.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VQWqHZFU3LnWI9nJP5wdlZl1FJSVMvPwMU4uPOB9VPc=
+			tLzoQcPcUFl2M7ufLwDo2F0Fdy8QzViwi9/H6uOBmLg=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
