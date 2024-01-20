@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EmployeeApp.AddEmployee"
+             Title="AddEmployee">
+             
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="10"/>
+                <Setter Property="TextColor" Value="Black"/>
+
+            </Style>
+
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+
+    <StackLayout Margin="10">
+        <Label Text="First Name" FontSize="16"/>
+        <Entry Text="{Binding EmployeeDetails.FirstName}" Placeholder="Fist Name"/>
+    
+    <VerticalStackLayout>
+        <Label Text="Last Name" FontSize="16"/>
+        <Entry Text="{Binding EmployeeDetails.LastName}" Placeholder="Last Name"/>
+    </VerticalStackLayout>
+
+    <VerticalStackLayout>
+        <Label Text="Email Adress" FontSize="16"/>
+        <Entry Text="{Binding EmployeeDetails.EmailAdress}"  Placeholder="Email Adress"/>
+    </VerticalStackLayout>
+
+    <VerticalStackLayout>
+        <Label Text="Department" FontSize="16"/>
+        <Entry Text="{Binding EmployeeDetails.Department}" Placeholder="Department"/>
+
+    </VerticalStackLayout>
+
+    <VerticalStackLayout>
+        <Label Text="OffDay" FontSize="16"/>
+        <Entry Text="{Binding EmployeeDetails.OffDay}" Placeholder="OffDay"/>
+
+    </VerticalStackLayout>
+
+   
+        <Button Command="{Binding AddEmployeeCommand}" Text="Add Employee"/>
+
+    </StackLayout>
+</ContentPage>

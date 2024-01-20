@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmployeeApp</name>
+    </assembly>
+    <members>
+        <member name="T:EmployeeApp.ViewModels.AddEmployeeViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:EmployeeApp.ViewModels.AddEmployeeViewModel.EmployeeDetails">
+            <inheritdoc cref="F:EmployeeApp.ViewModels.AddEmployeeViewModel.employeeDetails"/>
+        </member>
+        <member name="F:EmployeeApp.ViewModels.AddEmployeeViewModel.addEmployeeCommand">
+            <summary>The backing field for <see cref="P:EmployeeApp.ViewModels.AddEmployeeViewModel.AddEmployeeCommand"/>.</summary>
+        </member>
+        <member name="P:EmployeeApp.ViewModels.AddEmployeeViewModel.AddEmployeeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EmployeeApp.ViewModels.AddEmployeeViewModel.AddEmployee"/>.</summary>
+        </member>
+        <member name="T:EmployeeApp.ViewModels.EmployeesViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:EmployeeApp.ViewModels.EmployeesViewModel.addUpdateEmployeeCommand">
+            <summary>The backing field for <see cref="P:EmployeeApp.ViewModels.EmployeesViewModel.AddUpdateEmployeeCommand"/>.</summary>
+        </member>
+        <member name="P:EmployeeApp.ViewModels.EmployeesViewModel.AddUpdateEmployeeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EmployeeApp.ViewModels.EmployeesViewModel.AddUpdateEmployee"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EmployeeDetails">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EmployeeDetails" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EmployeeDetails">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EmployeeDetails" generated properties.</summary>
+        </member>
+    </members>
+</doc>
