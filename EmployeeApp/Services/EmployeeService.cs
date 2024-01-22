@@ -37,6 +37,7 @@ namespace EmployeeApp.Services
 
         public async Task<List<Employee>> GetEmployeesList()
         {
+            await SetUpDatabase();
             var employeesList = await _dbConnection.Table<Employee>().ToListAsync();
 
                 return employeesList;
@@ -44,7 +45,8 @@ namespace EmployeeApp.Services
 
         public async Task<int> UpdateEmployee(Employee employee)
         {
-            return await _dbConnection.InsertAsync(employee);
+            await SetUpDatabase();
+            return await _dbConnection.UpdateAsync(employee);
         }
     }
 }

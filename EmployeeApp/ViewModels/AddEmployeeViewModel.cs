@@ -10,23 +10,24 @@ namespace EmployeeApp.ViewModels
 	{
 		private readonly IEmployeeService _employeeService;
 
-		public AddEmployeeViewModel(IEmployeeService employeeService )
-		{
-			_employeeService = employeeService;
+        public AddEmployeeViewModel(IEmployeeService employeeService)
+        {
+            _employeeService = employeeService;
 
-			EmployeeDetails = new Employee();
+            EmployeeDetails = new Employee();
 
-		}
-		[ObservableProperty]
+        }
+
+        [ObservableProperty]
 
 		public Employee employeeDetails;
 
 		[RelayCommand]
 
-		public async void AddEmployee()
+		public async Task AddEmployee()
 		{
 
-			var response = await  _employeeService.AddEmployee(employeeDetails);
+			var response = await  _employeeService.AddEmployee(EmployeeDetails);
 			if( response > 0)
 			{
 				await Shell.Current.DisplayAlert("record added", "employee submitted", "ok");

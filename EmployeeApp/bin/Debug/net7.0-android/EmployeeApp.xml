@@ -15,16 +15,23 @@
             <summary>The backing field for <see cref="P:EmployeeApp.ViewModels.AddEmployeeViewModel.AddEmployeeCommand"/>.</summary>
         </member>
         <member name="P:EmployeeApp.ViewModels.AddEmployeeViewModel.AddEmployeeCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EmployeeApp.ViewModels.AddEmployeeViewModel.AddEmployee"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EmployeeApp.ViewModels.AddEmployeeViewModel.AddEmployee"/>.</summary>
         </member>
         <member name="T:EmployeeApp.ViewModels.EmployeesViewModel">
             <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:EmployeeApp.ViewModels.EmployeesViewModel.getEmployeesListCommand">
+            <summary>The backing field for <see cref="P:EmployeeApp.ViewModels.EmployeesViewModel.GetEmployeesListCommand"/>.</summary>
+        </member>
+        <member name="P:EmployeeApp.ViewModels.EmployeesViewModel.GetEmployeesListCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EmployeeApp.ViewModels.EmployeesViewModel.GetEmployeesList"/>.</summary>
         </member>
         <member name="F:EmployeeApp.ViewModels.EmployeesViewModel.addUpdateEmployeeCommand">
             <summary>The backing field for <see cref="P:EmployeeApp.ViewModels.EmployeesViewModel.AddUpdateEmployeeCommand"/>.</summary>
         </member>
         <member name="P:EmployeeApp.ViewModels.EmployeesViewModel.AddUpdateEmployeeCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:EmployeeApp.ViewModels.EmployeesViewModel.AddUpdateEmployee"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EmployeeApp.ViewModels.EmployeesViewModel.AddUpdateEmployee"/>.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
             <summary>

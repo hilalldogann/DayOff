@@ -2,13 +2,34 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viemodels="clr-namespace:EmployeeApp.ViewModels"
-             x:DataType="viemodels:EmployeesViewModel"
-
              x:Class="EmployeeApp.EmployeesList"
              Title="Employees List">
     <StackLayout Margin="20" >
         <Label Text="Employees List" FontSize="30"/>
         <Button Text="Add Employee" Command="{Binding AddUpdateEmployeeCommand}" HorizontalOptions="EndAndExpand"/>
+
+        <CollectionView ItemsSource="{Binding Employees}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate >
+                    <StackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="{Binding FirstName}" />
+                            <Label Text="{Binding LastName}" />
+                            <Label Text="{Binding EmailAdress}" />
+                            <Label Text="{Binding Department}" />
+                            <Label Text="{Binding OffDay}" />
+
+                        </HorizontalStackLayout>
+
+                    </StackLayout>
+
+                </DataTemplate>
+
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+
     </StackLayout>
     
 
