@@ -22,11 +22,13 @@ namespace EmployeeApp.ViewModels
 
 		[RelayCommand]
 
-		private async Task GetEmployeesList()
+		public async Task GetEmployeesList()
 		{
 			var employees = await _employeeService.GetEmployeesList();
-			if(employees.Count > 0)
+			if(employees?.Count > 0)
 			{
+				Employees.Clear();
+
 				foreach(var employee in employees)
 				{
 					Employees.Add(employee);
@@ -41,6 +43,38 @@ namespace EmployeeApp.ViewModels
 			await AppShell.Current.GoToAsync(nameof(AddEmployee));
 
 		}
-	}
+
+
+        [RelayCommand]
+
+        public async Task DisplayAction(Employee employee)
+        {
+
+            var response = await AppShell.Current.DisplayActionSheet("select option", "ok", null, "edit", "delete");
+
+            if (response == "edit")
+            {
+				var navparam = new Dictionary<string, object>();
+
+				navparam.Add("AddEmployee", employee);
+
+				await AppShell.Current.GoToAsync(nameof(AddEmployee), navparam);
+            }
+
+            if (response == "delete")
+            {
+                var deletresponse = await _employeeService.DeleteEmployee(employee);
+
+                if (deletresponse > 0)
+                {
+                    await GetEmployeesList();
+
+                }
+            }
+
+
+
+        }
+    }
 }
 

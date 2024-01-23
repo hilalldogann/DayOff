@@ -6,21 +6,23 @@ using EmployeeApp.Services;
 
 namespace EmployeeApp.ViewModels
 {
+	[QueryProperty(nameof(AddEmployee),"AddEmployee")]
+
 	public partial class AddEmployeeViewModel :ObservableObject
 	{
-		private readonly IEmployeeService _employeeService;
+        [ObservableProperty]
+
+        public Employee employeeDetails = new Employee();
+
+        private readonly IEmployeeService _employeeService;
 
         public AddEmployeeViewModel(IEmployeeService employeeService)
         {
             _employeeService = employeeService;
 
-            EmployeeDetails = new Employee();
-
         }
 
-        [ObservableProperty]
-
-		public Employee employeeDetails;
+      
 
 		[RelayCommand]
 
@@ -40,6 +42,8 @@ namespace EmployeeApp.ViewModels
             }
 		}
 
-	}
+	
+
+    }
 }
 

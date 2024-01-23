@@ -20,6 +20,7 @@
         <member name="T:EmployeeApp.ViewModels.EmployeesViewModel">
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="F:EmployeeApp.ViewModels.EmployeesViewModel.getEmployeesListCommand">
             <summary>The backing field for <see cref="P:EmployeeApp.ViewModels.EmployeesViewModel.GetEmployeesListCommand"/>.</summary>
@@ -32,6 +33,12 @@
         </member>
         <member name="P:EmployeeApp.ViewModels.EmployeesViewModel.AddUpdateEmployeeCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:EmployeeApp.ViewModels.EmployeesViewModel.AddUpdateEmployee"/>.</summary>
+        </member>
+        <member name="F:EmployeeApp.ViewModels.EmployeesViewModel.displayActionCommand">
+            <summary>The backing field for <see cref="P:EmployeeApp.ViewModels.EmployeesViewModel.DisplayActionCommand"/>.</summary>
+        </member>
+        <member name="P:EmployeeApp.ViewModels.EmployeesViewModel.DisplayActionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:EmployeeApp.ViewModels.EmployeesViewModel.DisplayAction(EmployeeApp.Models.Employee)"/>.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
             <summary>

@@ -5,12 +5,12 @@ namespace EmployeeApp;
 public partial class EmployeesList : ContentPage
 {
 
-	public EmployeesViewModel _viewmodel;
+	public EmployeesViewModel _viemodel;
 
 	public EmployeesList( EmployeesViewModel viewModel)
 	{
 		InitializeComponent();
-		_viewmodel = viewModel;
+		_viemodel = viewModel;
 		this.BindingContext = viewModel;
 	}
 
@@ -18,7 +18,7 @@ public partial class EmployeesList : ContentPage
     {
         base.OnAppearing();
 		{
-			_viewmodel.GetEmployeesListCommand.Execute(null);
+			_viemodel.GetEmployeesListCommand.Execute(null);
 		}
     }
 }

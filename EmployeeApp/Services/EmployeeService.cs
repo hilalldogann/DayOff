@@ -18,9 +18,6 @@ namespace EmployeeApp.Services
             }
         }
 
-
-
-
         public async Task<int> AddEmployee(Employee employee)
         {
             await SetUpDatabase();
@@ -30,10 +27,8 @@ namespace EmployeeApp.Services
         public async Task<int> DeleteEmployee(Employee employee)
         {
             await SetUpDatabase();
-            return await _dbConnection.InsertAsync(employee);
+            return await _dbConnection.DeleteAsync(employee);
         }
-
-
 
         public async Task<List<Employee>> GetEmployeesList()
         {

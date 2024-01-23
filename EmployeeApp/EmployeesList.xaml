@@ -3,25 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viemodels="clr-namespace:EmployeeApp.ViewModels"
              x:Class="EmployeeApp.EmployeesList"
-             Title="Employees List">
-    <StackLayout Margin="20" >
-        <Label Text="Employees List" FontSize="30"/>
-        <Button Text="Add Employee" Command="{Binding AddUpdateEmployeeCommand}" HorizontalOptions="EndAndExpand"/>
+             Title="Employees List" 
+             >
 
+    <StackLayout Margin="25" >
+        <Label Text="Employees List" FontSize="30" TextColor="Black"/>
+        <Button Text="Add Employee" Command="{Binding AddUpdateEmployeeCommand}" HorizontalOptions="EndAndExpand" />
+        <BoxView HeightRequest="20" Color="Transparent" />
         <CollectionView ItemsSource="{Binding Employees}">
             <CollectionView.ItemTemplate>
                 <DataTemplate >
-                    <StackLayout>
-                        <HorizontalStackLayout>
-                            <Label Text="{Binding FirstName}" />
-                            <Label Text="{Binding LastName}" />
-                            <Label Text="{Binding EmailAdress}" />
-                            <Label Text="{Binding Department}" />
-                            <Label Text="{Binding OffDay}" />
+                    <Frame Margin="10" Padding="10">
+                        <StackLayout>
+ 
+                            <HorizontalStackLayout Spacing="5">
+                                <Label Text="{Binding FirstName}" FontSize="15" FontAttributes="Bold"/>
+                                <Label Text="{Binding LastName}" FontSize="15" FontAttributes="Bold"/>
+                                <Label Text="{Binding EmailAdress}" FontSize="15" FontAttributes="Bold"/>
+                            </HorizontalStackLayout>
+                                <Label Text="{Binding Department}" FontSize="15" FontAttributes="Bold"/>
+                                <Label Text="{Binding OffDay}" FontSize="15" FontAttributes="Bold"/>
+                        </StackLayout>
 
-                        </HorizontalStackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viemodels:EmployeesViewModel}},Path=DisplayActionCommand}"
+                                                  CommandParameter="{Binding .}" />
+                        </Frame.GestureRecognizers>
 
-                    </StackLayout>
+                    </Frame>
+
 
                 </DataTemplate>
 
